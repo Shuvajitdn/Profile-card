@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #d5e1ef;
+}
+main {
+    width: 340px;
+    overflow: hidden;
+    background-color: #fdfcfc;
+    border-radius: 7px;
+    box-shadow: -4px -4px 20px rgba(0, 0, 0, 0.505);
+    margin: 50px auto;
+    text-align: center;
+}
+.top-card {
+    position: relative;
+}
+.top-card img {
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+.menu-icon {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.item1 {
+    left: 10px;
+    color: red;
+}
+.item2 {
+    right: 10px;
+    color: blue;
+}
+.middle-card {
+    padding: 20px;
+}
+footer h1 {
+    margin: 20px 0 10px;
+    font-size: 18px;
+}
+footer .social-icon {
+    font-size: 20px;
+    margin: 0 5px;
+    color: rgba(0, 0, 0, 0.9);
+    transition: color 0.3s;
+}
+footer .social-icon:hover {
+    color: #1990cc;
+}
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+button {
+    width: 110px;
+    height: 37px;
+    border-radius: 2px;
+    background: #1990cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #1477aa;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+.modal-content form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.modal-content form input,
+.modal-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.modal-content form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1990cc;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.modal-content form button:hover {
+    background: #1477aa;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+.close:hover {
+    color: black;
+}
